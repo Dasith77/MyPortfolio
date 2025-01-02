@@ -6,6 +6,7 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');  
     navbar.classList.toggle('active');  
 };
+
 /*===============scroll sections active link==================*/
 let sections = document.querySelectorAll('section');  
 let navLinks = document.querySelectorAll('header nav a');  
@@ -47,9 +48,31 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 
 /*===============typed js==================*/
 const typed = new Typed('.multiple-text', {  
-    strings: ['Machine Learninng enthusiast', 'Backend Developer', 'Blogger'],  
+    strings: ['Full Stack Developer','Machine Learning Enthusiast','IOT Developer'],  
     typeSpeed: 50,  
     backSpeed: 100,  
     backDelay: 1000,  
     loop: true,  
 });
+
+/*===============Tabbed Section Functionality==================*/
+const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('active'));
+        tabContents.forEach((content) => content.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+});
+
+function openPopup(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = 'none';
+}

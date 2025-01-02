@@ -7,7 +7,10 @@
     <title>Responsive Personal Portfolio Website Design | Codehal</title>
 
     <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -15,164 +18,380 @@
 
   <body>
     <!-- header design -->
-     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-     </header>>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#tech-stack">Tech Stack</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    >
 
     <!-- home section design -->
-    <section class="home" id="home">  
-      <div class="home-content">  
-        <h3>Hello, It's Me</h3>  
-        <h1>Dasith Niwanthaka</h1>  
-        <h3>And I'm a <span class="multiple-text"></span></h3>  
-        <p>I am full stack development and machine learning enthusiast</p>  
-        <div class="social-media">  
-          <a href="https://www.linkedin.com/in/dasith-niwanthaka-00067a20a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1VrSaFaBSeaSntQJJOZ7Nw%3D%3D" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin' ></i></a>
-          <a href="https://github.com/Dasith77" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
-          <a href="https://www.facebook.com/dasith.niwanthaka" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook' ></i></a>  
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Dasith Niwanthaka</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>I am full stack development and machine learning enthusiast</p>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/dasith-niwanthaka-pathiraja"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Dasith77"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/dasith.niwanthaka"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bx bxl-facebook"></i
+          ></a>
           <!-- <a href="#"><i class='bx bxl-twitter' ></i></a>   -->
           <!-- <a href="#"><i class='bx bxl-instagram-alt' ></i></a>   -->
-          
-        </div>  
-        <a href="downloads/CV.pdf" class="btn" download="Dasith_Niwanthaka_CV">Download CV</a>
-      </div>  
-      <div class="home-img">  
-          <img src="images/home.png" alt="">  
+        </div>
+        <a href="downloads/CV.pdf" class="btn" download="Dasith_Niwanthaka_CV"
+          >Download CV</a
+        >
+      </div>
+      <div class="home-img">
+        <img src="images/SHE06734.jpg" alt="" />
       </div>
     </section>
 
-    <!-- about section design -->
-    <section class="about" id="about">  
-      <div class="about-img">  
-          <img src="images/about.png" alt="">  
-      </div>  
-  
-      <div class="about-content">  
-          <h2 class="heading">About <span>Me</span></h2>  
-          <h3>Frontend Developer</h3>  
-          <p>
-            I am a frontend developer with 3 years of experience. 
-            I am a full stack development and machine learning enthusiast.
-            I am a frontend developer with 3 years of experience. 
-            I am a full stack development and machine learning enthusiast.
-          </p>
-          
-      </div>  
+    <!-- About Section Design -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+          I am a full stack web developer with a passion for creating
+          interactive and responsive web applications. I have experience working
+          with JavaScript, React, Node.js, Express, MySQL, HTML, CSS, and Git. I
+          am a quick learner and I am always looking to expand my knowledge and
+          skill set. I am a team player and I am excited to work with others to
+          create amazing applications. I am eager to learn new technologies.
+        </p>
+      </div>
+
+      <!-- Tabbed Section for Subtopics -->
+      <div class="about-tabs">
+        <ul class="tabs">
+          <li class="tab active" data-tab="education">Education</li>
+          <li class="tab" data-tab="certifications">Certifications</li>
+          <li class="tab" data-tab="achievements">Achievements</li>
+        </ul>
+
+        <div class="tab-content active" id="education">
+          <ul class="education-list">
+            <li>
+              <h1>
+                B.Sc Engineering (Hons) - Computer Science and Engineering
+              </h1>
+              <h2>University of Moratuwa</h2>
+              <p>Specialize in Integrated Computer Engineering</p>
+            </li>
+            <li>
+              <h1>G.C.E Advanced Level(Physical Science) - 2019</h1>
+              <h2>R/Eheliyagoda Central College</h2>
+              <p>District Rank - 2 | Island Rank - 11</p>
+            </li>
+            <li>
+              <h1>G.C.E Ordinary Level - 2015</h1>
+              <h2>R/Eheliyagoda Central College</h2>
+              <p>
+                Passed with 8A passes and 1B pass including
+                Science,Mathematics,ICT and English
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="certifications">
+          <ul class="certifications-list">
+            <li>
+              <span
+                >Supervised Machine Learning: Regression and
+                Classification</span
+              >
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/H94NQU2ZA4G9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="credentials"
+                >View Credential</a
+              >
+            </li>
+            <li>
+              <span>Intro to Deep Learning</span>
+              <a
+                href="https://www.kaggle.com/learn/certification/dasithniwanthaka/intro-to-deep-learning"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="credentials"
+                >View Credential</a
+              >
+            </li>
+            <li>
+              <span>Web Development with HTML, CSS, JavaScript Essentials</span>
+              <a
+                href="https://www.credly.com/badges/79e9cb52-cbcf-4f85-b2c5-e66ee58f65ac/linked_in_profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="credentials"
+                >View Credential</a
+              >
+            </li>
+            <li>
+              <span>Business Analysis & Process Management</span>
+              <a
+                href="https://coursera.org/share/44f199a61520ffa18cb399edf20599c0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="credentials"
+                >View Credential</a
+              >
+            </li>
+            <li>
+              <span>Introduction to Big Data</span>
+              <a
+                href="https://coursera.org/share/237c43c5e488a5973fc6b84391161498"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="credentials"
+                >View Credential</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="achievements">
+          <ul class="achievements-list">
+            <li>
+              <strong>IEEE SPS Video and Image Processing Cup</strong>
+              <p>
+                World rank -13 | Participated in the Ophthalmic Data Challenge,
+                using 3D OCT image processing to improve eye disease treatment.
+              </p>
+            </li>
+            <li>
+              <strong>Idealize’23</strong>
+              <p>
+                Semifinalists | competition with having more than 1000
+                participant teams
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        
+      </div>
     </section>
 
-
-    <!-- education section design -->
-    <section class="education" id="education">  
-      <h2 class="heading">My <span>Education</span></h2>  
-      <div class="education-container">  
-          <div class="education-box">  
-               
-              <h3>GCE advanced level</h3>  
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laboru  nisi alias iusto voluptatibus.</p>  
-              <a href="#" class="btn">Read More</a>  
-          </div>  
-
-          <div class="education-box">  
-               
-              <h3>Higher National Diploma in Software Engineering</h3>  
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laboru  nisi alias iusto voluptatibus.</p>  
-              <a href="#" class="btn">Read More</a>
+    <!-- Tech Stack Section Design -->
+    <section class="tech-stack" id="tech-stack">
+      <h2 class="heading">Tech <span>Stack</span></h2>
+      <div class="tech-stack-container">
+        <!-- Frontend Section -->
+        <div class="stack-category">
+          <h3>Frontend</h3>
+          <div class="stack-items">
+            <div class="stack-item">
+              <i class="bx bxl-html5"></i>
+              <p>HTML</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-css3"></i>
+              <p>CSS</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-angular"></i>
+              <p>Angular</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-react"></i>
+              <p>React</p>
+            </div>
           </div>
+        </div>
 
-          <div class="education-box">  
-               
-              <h3>BSc in Computer Science and Engineering</h3>  
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laboru  nisi alias iusto voluptatibus.</p>  
-              <a href="#" class="btn">Read More</a>
-
+        <!-- Backend Section -->
+        <div class="stack-category">
+          <h3>Backend</h3>
+          <div class="stack-items">
+            <div class="stack-item">
+              <i class="bx bxl-java"></i>
+              <p>Java</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-java"></i>
+              <p>SpringBoot</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-nodejs"></i>
+              <p>Node.js</p>
+            </div>
           </div>
+        </div>
 
+        <!-- Language Section -->
+        <div class="stack-category">
+          <h3>Languages</h3>
+          <div class="stack-items">
+            <div class="stack-item">
+              <i class="bx bxl-java"></i>
+              <p>Java</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-python"></i>
+              <p>Python</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-javascript"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-typescript"></i>
+              <p>TypeScript</p>
+            </div>
+          </div>
+        </div>
 
-      </div>  
+        <!-- Database Section -->
+        <div class="stack-category">
+          <h3>Database</h3>
+          <div class="stack-items">
+            <div class="stack-item">
+              <i class="bx bxs-data"></i>
+              <p>MySQL</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-mongodb"></i>
+              <p>MongoDB</p>
+            </div>
+            <div class="stack-item">
+              <i class="bx bxl-postgresql"></i>
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- project section design -->
-    <section class="project" id="project">  
-      <h2 class="heading">Latest <span>Project</span></h2>  
+    <section class="project" id="project">
+      <h2 class="heading">Latest <span>Projects</span></h2>
 
-      <div class="project-container">  
+      <div class="project-container">
+        <div class="project-box">
+          <img src="images/hotelimg.jpg" alt="" />
+          <div class="project-layer">
+            <h4>Hotel Management System</h4>
+            <p>
+              System that allows hotel owners to add contracts and enables
+              customers to search for room availability based on their
+              preferences. The system was implemented as a responsive website.
+            </p>
+            <br />
+            <h2><b>Stack : SpringBoot | Angular | PostgreSQL</b></h2>
 
-          <div class="project-box">  
-              <img src="images/portfolio1.jpg" alt="">  
-              <div class="project-layer">  
-                  <h4>Web Design</h4>  
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>  
-                  <a href="#"><i class="bx bx-linkl-external"></i></a>
-              </div>  
-          </div>  
-
-          <div class="project-box">  
-            <img src="images/portfolio2.jpg" alt="">  
-            <div class="project-layer">  
-                <h4>Web Design</h4>  
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>  
-                <a href="#"><i class="bx bx-linkl-external"></i></a>
-            </div>  
-          </div> 
-
-          <div class="project-box">  
-            <img src="images/portfolio3.jpg" alt="">  
-            <div class="project-layer">  
-                <h4>Web Design</h4>  
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>  
-                <a href="#"><i class="bx bx-linkl-external"></i></a>
-            </div>  
+            <a
+              href="https://github.com/Dasith77/Hotel-Management-System-backend"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-github"></i
+            ></a>
           </div>
-          
-          <div class="project-box">  
-            <img src="images/portfolio2.jpg" alt="">  
-            <div class="project-layer">  
-                <h4>Web Design</h4>  
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>  
-                <a href="#"><i class="bx bx-linkl-external"></i></a>
-            </div>  
-          </div>
+        </div>
 
-      </div>  
+        <div class="project-box">
+          <img src="images/tech.jpg" alt="" />
+          <div class="project-layer">
+            <h4>
+              Real-Time Traffic Light Detection with Spiking Neural Networks on
+              FPGA
+            </h4>
+            <p>
+              A real-time traffic light detection system using a Spiking Neural
+              Network (SNN) implemented on the Nexys A7 FPGA board. Trained the
+              neural network in Octave with labeled images to optimize
+              detection.
+            </p>
+            <a
+              href="https://github.com/supungamlath/NexysA7_Traffic_Light_Detection"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="images/sign.jpeg" alt="" />
+          <div class="project-layer">
+            <h4>Sign Language Detector</h4>
+            <p>
+              A real-time sign language detection system that can detect and
+              translate sign language to text.
+            </p>
+            <a
+              href="https://github.com/Dasith77/American_sign_lang_detector_"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">  
-      <h2 class="heading">Contact <span>Me!</span></h2> 
-
-      <form action="#">  
-        <div class="input-box">  
-          <input type="text" placeholder="Full Name">  
-          <input type="email" placeholder="Email Address">  
-        </div>  
-        <div class="input-box">  
-          <input type="number" placeholder="Mobile Number">  
-          <input type="text" placeholder="Email Subject">  
-        </div>  
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>  
-        <input type="submit" value="Send Message" class="btn">  
-      </form>  
+    <!-- Contact Section Design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <p class="description">
+        Have questions or want to get in touch? Feel free to reach out via email
+        or connect with me on social media.
+      </p>
+      <hr class="divider" />
+      <div class="contact-icons">
+        <a href="dasith.20@cse.mrt.ac.lk" target="_blank" class="icon">
+          <i class="bx bx-envelope"></i>
+          <p>dasith.20@cse.mrt.ac.lk</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dasith-niwanthaka-pathiraja"
+          target="_blank"
+          class="icon"
+        >
+          <i class="bx bxl-linkedin"></i>
+          <p>Linkedin profile</p>
+        </a>
+        <a href="https://github.com/Dasith77" target="_blank" class="icon">
+          <i class="bx bxl-github"></i>
+          <p>Github profile</p>
+        </a>
+      </div>
     </section>
 
     <!-- footer design -->
-    <footer class="footer">  
-      <div class="footer-text">  
-        <p>Copyright &copy; 2024 by Dasith | All Rights Reserved.</p>  
-      </div>  
-      <div class="footer-iconTop">  
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>  
-      </div>  
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Dasith | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
 
     <!-- scroll reveal -->
@@ -181,13 +400,11 @@
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 
     <!-- custom js -->
     <script src="js/script.js"></script>
