@@ -749,7 +749,20 @@ section.project {
         margin-top: 2rem;  
     }
 }
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .home-img {
+        width: 25rem; /* Adjust size for smaller screens */
+        height: 25rem;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .home-img {
+        width: 20rem; /* Further adjustment for very small screens */
+        height: 20rem;
+    }
+}
 
 /* Popup styling */
 .popup {
