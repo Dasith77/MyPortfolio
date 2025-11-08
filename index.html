@@ -21,17 +21,30 @@
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
 
+      <div class="header-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="bx bx-moon"></i>
+        </button>
       <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
+        <a href="#experiences">Experiences</a>
         <a href="#about">About</a>
         <a href="#tech-stack">Tech Stack</a>
         <a href="#project">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
-    >
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+      <div class="loader"></div>
+    </div>
 
     <!-- home section design -->
     <section class="home" id="home">
@@ -67,7 +80,148 @@
         >
       </div>
       <div class="home-img">
-        <img src="images/SHE06734.jpg" alt="" />
+        <div class="image-wrapper">
+          <img src="images/profile.jpg" alt="Dasith Niwanthaka" />
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences Section Design -->
+    <section class="experiences" id="experiences">
+      <h2 class="heading">My <span>Experiences</span></h2>
+      
+      <div class="experiences-container">
+        <!-- Experience 1: Software Engineer -->
+        <div class="experience-box">
+          <div class="experience-header">
+            <div class="experience-logo">
+              <img src="images/CG-Logo.png" alt="CodeGen International" />
+            </div>
+            <div class="experience-info">
+              <h3>Software Engineer</h3>
+              <h4>CodeGen International (Pvt) Ltd</h4>
+            </div>
+          </div>
+          <div class="experience-summary">
+            <p>Developed and maintained Agentic AI systems using LLMs and LangChain. Contributed to AI-powered revenue management systems for the hotel and tourism industry. Implemented scalable Python backends with multi-agent collaboration capabilities.</p>
+          </div>
+          <button class="read-more-btn" onclick="openExperienceModal('modal1')">Read More</button>
+        </div>
+
+        <!-- Experience 2: Software Engineering Intern -->
+        <div class="experience-box">
+          <div class="experience-header">
+            <div class="experience-logo">
+              <img src="images/CG-Logo.png" alt="CodeGen International" />
+            </div>
+            <div class="experience-info">
+              <h3>Software Engineering Intern</h3>
+              <h4>CodeGen International (Pvt) Ltd</h4>
+            </div>
+          </div>
+          <div class="experience-summary">
+            <p>Enhanced LIA chatbot backend for global flight and hotel booking systems. Designed features for Inspire product recommendation system. Developed restaurant table reservation system with real-time order processing.</p>
+          </div>
+          <button class="read-more-btn" onclick="openExperienceModal('modal2')">Read More</button>
+        </div>
+
+        <!-- Experience 3: Visiting Instructor -->
+        <div class="experience-box">
+          <div class="experience-header">
+            <div class="experience-logo">
+              <img src="images/University_of_Moratuwa_logo.png" alt="University of Moratuwa" />
+            </div>
+            <div class="experience-info">
+              <h3>Visiting Instructor</h3>
+              <h4>Department of Computer Science & Engineering</h4>
+            </div>
+          </div>
+          <div class="experience-summary">
+            <p>Conducted weekly lab sessions and guided students on technical learning. Prepared and administered online quizzes for engineering undergraduates. Delivered interactive sessions to enhance student engagement.</p>
+          </div>
+          <button class="read-more-btn" onclick="openExperienceModal('modal3')">Read More</button>
+        </div>
+      </div>
+
+      <!-- Experience Modals -->
+      <!-- Modal 1: Software Engineer -->
+      <div id="modal1" class="experience-modal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeExperienceModal('modal1')">&times;</span>
+          <div class="modal-header">
+            <div class="modal-logo">
+              <img src="images/CG-Logo.png" alt="CodeGen International" />
+            </div>
+            <div class="modal-info">
+              <h3>Software Engineer</h3>
+              <h4>CodeGen International (Pvt) Ltd</h4>
+              <p class="modal-date">Jul 2025 – Present | Onsite</p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <ul class="experience-details">
+              <li>Developed and maintained Agentic AI systems leveraging Large Language Models (LLMs), LangChain, and MCP server development to automate intelligent decision-making and conversational workflows.</li>
+              <li>Contributed to an AI-powered revenue management system designed for the Sri Lankan and international hotel and tourism industry, improving efficiency and data-driven pricing strategies.</li>
+              <li>Implemented scalable Python backend with integrated LLM-based tools and APIs to enable multi-agent collaboration, contextual reasoning, and automated workflow execution.</li>
+              <li>Collaborated closely with clients, product managers, and cross-functional teams to deliver production-grade AI solutions for ongoing real-world projects.</li>
+              <li>Participated in end-to-end client deliveries, including prototyping, testing, deployment, and post-delivery support, ensuring high reliability and performance in live environments.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2: Software Engineering Intern -->
+      <div id="modal2" class="experience-modal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeExperienceModal('modal2')">&times;</span>
+          <div class="modal-header">
+            <div class="modal-logo">
+              <img src="images/CG-Logo.png" alt="CodeGen International" />
+            </div>
+            <div class="modal-info">
+              <h3>Software Engineering Intern</h3>
+              <h4>CodeGen International (Pvt) Ltd</h4>
+              <p class="modal-date">Dec 2023 – Jun 2024 | Onsite</p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <ul class="experience-details">
+              <li>Contributed to R&D projects by enhancing the LIA chatbot backend for a global flight and hotel booking client system.</li>
+              <li>Designed and implemented new features for the Inspire product recommendation system, integrating it with the TravelBox platform.</li>
+              <li>Developed backend functionalities for a restaurant table reservation system, including order placement, real-time status updates, and efficient order processing workflows.</li>
+              <li>Utilized technologies such as Spring Boot, Angular, Python, FastAPI, OpenAI API, and LangChain.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3: Visiting Instructor -->
+      <div id="modal3" class="experience-modal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeExperienceModal('modal3')">&times;</span>
+          <div class="modal-header">
+            <div class="modal-logo">
+              <img src="images/University_of_Moratuwa_logo.png" alt="University of Moratuwa" />
+            </div>
+            <div class="modal-info">
+              <h3>Visiting Instructor</h3>
+              <h4>Department of Computer Science & Engineering</h4>
+              <p class="modal-date">Jan 2025 – Jun 2025 | Part Time</p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <ul class="experience-details">
+              <li>Conducted weekly lab sessions and guided students on lab setups, debugging, and performance evaluations, fostering hands-on technical learning.</li>
+              <li>Prepared and administered online quizzes for level-one engineering undergraduates and invigilated exams and quizzes to ensure academic integrity.</li>
+              <li>Delivered interactive sessions, enhancing student engagement while strengthening communication and mentoring skills.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -100,7 +254,7 @@
                 B.Sc Engineering (Hons) - Computer Science and Engineering
               </h1>
               <h2>University of Moratuwa</h2>
-              <p>Specialize in Integrated Computer Engineering</p>
+              <p>Second Class Honours | Specialize in Integrated Computer Engineering</p>
             </li>
             <li>
               <h1>G.C.E Advanced Level(Physical Science) - 2019</h1>
@@ -365,7 +519,7 @@
       </p>
       <hr class="divider" />
       <div class="contact-icons">
-        <a href="dasith.20@cse.mrt.ac.lk" target="_blank" class="icon">
+        <a href="mailto:dasith.20@cse.mrt.ac.lk" class="icon">
           <i class="bx bx-envelope"></i>
           <p>dasith.20@cse.mrt.ac.lk</p>
         </a>
@@ -393,12 +547,6 @@
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
